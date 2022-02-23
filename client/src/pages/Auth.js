@@ -27,7 +27,7 @@ class Auth extends React.Component{
       redirect: 'follow'
     };
     
-    fetch("http://localhost:8080/api/investor/signin", requestOptions)
+    fetch("/api/investor/signin", requestOptions)
       .then(response => response.json())
       .then(result =>{
           console.log(result);
