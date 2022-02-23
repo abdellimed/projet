@@ -57,7 +57,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://localhost:8080/create_new_investissor", requestOptions)
+fetch("/create_new_investissor", requestOptions)
   .then(response => response.text())
   .then(result => {console.log(result)
 
