@@ -29,7 +29,7 @@ class InvestorProfile extends Component {
         redirect: 'follow'
       };
       
-      fetch("http://localhost:8080/api/"+this.state.id, requestOptions)
+      fetch("/api/"+this.state.id, requestOptions)
         .then(response => response.json())
         .then(result => {
             console.log(result.bestcompanys)
